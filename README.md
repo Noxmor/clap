@@ -55,11 +55,11 @@ A command line argument parser written in C.
 
 ### Example:
 The input `program --help foo -abc --bar=123 -- --test` would achieve the following:
-* Parse the program flag "help"
-* Run the subcommand "foo" (if "foo" is a valid subcommand, otherwise it will be parsed as an non-option argument)
-* Parse the subcommand "foo" flags 'a', 'b' and 'c'
-* Parse the subcommand "foo" flag "bar" with the argument "123"
-* Parse the non-option argument "test"
+* Parse the program flag "help".
+* Run the subcommand "foo" (if "foo" is a valid subcommand, otherwise it will be parsed as an non-option argument).
+* Parse the subcommand "foo" flags 'a', 'b' and 'c'.
+* Parse the subcommand "foo" flag "bar" with the argument "123".
+* Parse the non-option argument "test", because "--test" was demarcated.
 
 ***
 
