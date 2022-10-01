@@ -45,6 +45,9 @@ A command line argument parser written in C.
 * A program flag is a global flag, which is not connected to any subcommand.
 * Program flags are **always** specified **before** any subcommand.
 
+**Subcommands**
+* A subcommand is an alphabetical word.
+
 **Subcommand flags**
 * A subcommand flag is always connected to a specific subcommand.
 * Subcommand flags are **always** specified **after** the subcommand.
