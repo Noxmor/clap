@@ -116,6 +116,21 @@ void clapRegisterSubcommand(const char* name)
 		return;
 	}
 
+	if (!name)
+	{
+		printf("Could not register subcommand: Name is null!\n");
+		return;
+	}
+
+	size_t name_len = strlen(name);
+	for (size_t i = 0; i < name_len; i++)
+	{
+		if (!isalpha(name[i]))
+		{
+			printf("Could not register subcommand: Invalid name (%s)!\n", name);
+		}
+	}
+
 	CLAPsubcommand* subcommand = &handler.subcommands[handler.subcommand_count++];
 	subcommand->name = name;
 }
