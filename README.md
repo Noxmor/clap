@@ -47,6 +47,7 @@ A command line argument parser written in C.
 
 **Subcommands**
 * A subcommand is an alphabetical word.
+* Subcommands can have their own flags.
 
 **Subcommand flags**
 * A subcommand flag is always connected to a specific subcommand.
