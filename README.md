@@ -77,7 +77,7 @@ If you want to modify these buffer's capacities, simply `define the following ma
 Now you will need to register your flags and subcommands to the parser, so the parser knows how to handle each argument when parsing.
 Flags are registered as follows:
 * `void clapRegisterFlag(const char* long_name, char short_name, CLAPflagArgType arg_type, const char* subcommand_name)`
-* **long_name**: An alphanumerical name for the flag. Needs to be at least 2 characters long. Words are separated by a hypen.
+* **long_name**: An alphanumerical name for the flag. Needs to be at least 2 characters long. Words are separated by a hyphen.
 * **short_name**: An alphabetical name for the flag.
 * **arg_type**: Type of the flag's argument depending on whether it:
   * requieres an argument: `CLAP_FLAG_REQ_ARG`
