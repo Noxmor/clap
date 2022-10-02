@@ -26,12 +26,12 @@ A command line argument parser written in C.
 ## How the parser works
 
 **Long flags**
-* Indicated by two hypens: `--`
+* Indicated by two hyphens: `--`
 * Requiered arguments can be connected via a space or equals sign: `--foo bar` or `--foo=bar`
 * Optional arguments must be connected via an equals sign: `--foo=bar`
 
 **Short flags**
-* Indicated by one hypen: `-`
+* Indicated by one hyphen: `-`
 * Can be grouped: `-abc` is the same as `-a -b -c`
 * The last grouped flag can take an argument: `-abcfoo` or `-abc foo`
 * Requiered arguments can connected directly or via a space: `-fbar` or `-f bar`
@@ -39,7 +39,7 @@ A command line argument parser written in C.
 
 **Non-options**
 * Non-options are basically any argument that is not a flag or subcommand.
-* If an non-option argument looks like a flag, demarcate it with a double hypen: `-- --foo`
+* If an non-option argument looks like a flag, demarcate it with a double hyphen: `-- --foo`
 
 **Program flags**
 * A program flag is a global flag, which is not connected to any subcommand.
