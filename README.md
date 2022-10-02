@@ -34,7 +34,7 @@ A command line argument parser written in C.
 * Indicated by one hyphen: `-`
 * Can be grouped: `-abc` is the same as `-a -b -c`
 * The last grouped flag can take an argument: `-abcfoo` or `-abc foo`
-* Requiered arguments can connected directly or via a space: `-fbar` or `-f bar`
+* Requiered arguments can be connected directly or via a space: `-fbar` or `-f bar`
 * Optional arguments must be connected directly: `-fbar`
 
 **Non-options**
